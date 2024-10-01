@@ -8,7 +8,7 @@ namespace Tyuiu.AkhmedullovRR.Sprint1.Task4.V7.Lib
         public double Calculate(double x, double y)
         {
             double result = (1 + Math.Sqrt(x * y)) / Math.Pow((x - 3 * y), 2);
-            return Math.Round(result, 3);
+            return Math.Round(result, 3, MidpointRounding.ToZero);
         }
     }
 }
